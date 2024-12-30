@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бриф на розробку рекламного креативу</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            font-size: 14px;
+            color: #555;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: #007bff;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Бриф на розробку рекламного креативу</h1>
+</header>
+
+<div class="container">
+    <form action="#" method="POST">
+        <!-- Загальна інформація -->
+        <div class="section">
+            <h2>1. Загальна інформація про проект</h2>
+            <div class="form-group">
+                <label for="project-name">Назва проекту:</label>
+                <input type="text" id="project-name" name="project-name" required>
+            </div>
+            <div class="form-group">
+                <label for="product-description">Опис продукту/послуги:</label>
+                <textarea id="product-description" name="product-description" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="audience">Цільова аудиторія (вік, стать, інтереси, соціальний статус):</label>
+                <textarea id="audience" name="audience" rows="4" required></textarea>
+            </div>
+        </div>
+
+        <!-- Цілі рекламної кампанії -->
+        <div class="section">
+            <h2>2. Цілі рекламної кампанії</h2>
+            <div class="form-group">
+                <label for="campaign-goals">Основна мета:</label>
+                <textarea id="campaign-goals" name="campaign-goals" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="expected-results">Очікуваний результат:</label>
+                <textarea id="expected-results" name="expected-results" rows="4" required></textarea>
+            </div>
+        </div>
+
+        <!-- Основні повідомлення -->
+        <div class="section">
+            <h2>3. Основні повідомлення</h2>
+            <div class="form-group">
+                <label for="main-message">Головна ідея або меседж:</label>
+                <textarea id="main-message" name="main-message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="tone-style">Тон і стиль:</label>
+                <textarea id="tone-style" name="tone-style" rows="4" required></textarea>
+            </div>
+        </div>
+
+        <!-- Канали розміщення -->
+        <div class="section">
+            <h2>4. Канали розміщення</h2>
+            <div class="form-group">
+                <label for="placement-channels">Де буде розміщений креатив:</label>
+                <input type="text" id="placement-channels" name="placement-channels" required>
+            </div>
+        </div>
+
+        <!-- Технічні вимоги -->
+        <div class="section">
+            <h2>5. Технічні вимоги</h2>
+            <div class="form-group">
+                <label for="file-formats">Формати файлів:</label>
+                <input type="text" id="file-formats" name="file-formats" required>
+            </div>
+            <div class="form-group">
+                <label for="dimensions">Розміри:</label>
+                <input type="text" id="dimensions" name="dimensions" required>
+            </div>
+            <div class="form-group">
+                <label for="duration">Тривалість:</label>
+                <input type="text" id="duration" name="duration" required>
+            </div>
+        </div>
+
+        <!-- Конкуренти -->
+        <div class="section">
+            <h2>6. Конкуренти</h2>
+            <div class="form-group">
+                <label for="competitors">Основні конкуренти:</label>
+                <textarea id="competitors" name="competitors" rows="4" required></textarea>
+            </div>
+        </div>
+
+        <!-- Бюджет і терміни -->
+        <div class="section">
+            <h2>7. Бюджет і терміни</h2>
+            <div class="form-group">
+                <label for="budget">Бюджет:</label>
+                <input type="text" id="budget" name="budget" required>
+            </div>
+            <div class="form-group">
+                <label for="deadline">Дедлайн:</label>
+                <input type="date" id="deadline" name="deadline" required>
+            </div>
+        </div>
+
+        <!-- Додаткова інформація -->
+        <div class="section">
+            <h2>8. Додаткова інформація</h2>
+            <div class="form-group">
+                <label for="preferences">Побажання:</label>
+                <textarea id="preferences" name="preferences" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="references">Референси:</label>
+                <textarea id="references" name="references" rows="4"></textarea>
+            </div>
+        </div>
+
+        <button type="submit">Надіслати</button>
+    </form>
+</div>
+
+</body>
+</html>
